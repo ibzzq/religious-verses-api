@@ -1,0 +1,11 @@
+          - type: custom-api
+            title: Bible Verse
+            cache: 1d
+            url: https://bible.ibzz.uk
+            template: |
+              <p class="size-h4 color-paragraph" style="font-weight:500; direction: rtl; text-align: left;">
+                {{ .JSON.String "title" }}
+              </p>
+              <p class="size-h6 color-dimmed" style="direction: rtl; text-align: left;">
+                {{ .JSON.String "description" }}
+              </p>

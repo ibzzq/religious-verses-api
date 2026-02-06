@@ -1,0 +1,26 @@
+export default {
+  async fetch(request, env) {
+    // gets verses from the KV
+    const data = await env.VERSES.get("verses");
+    if (!data) return new Response("No data found", { status: 404 });
+
+    // splits into two versions
+    const lines = data.split("\n").filter(Boolean);
+    const pairs = lines.map(line => {
+      const [verse, source] = line.split("|");
+      return { verse, source };
+    });
+
+    // choose random verse
+    const random = pairs[Math.floor(Math.random() * pairs.length)];
+
+    // json results
+    return new Response(JSON.stringify({
+      title: random.verse,
+      description: random.source,
+      color: "white"
+    }), {
+      headers: { "Content-Type": "application/json" }
+    });
+  }
+}

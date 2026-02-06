@@ -1,0 +1,11 @@
+          - type: custom-api
+            title: Torah Verse
+            cache: 1d
+            url: https://torah.ibzz.uk
+            template: |
+              <p class="size-h4 color-paragraph" style="font-weight:600; direction: rtl; text-align: right;">
+                {{ .JSON.String "title" }}
+              </p>
+              <p class="size-h6 color-dimmed" style="direction: rtl; text-align: right;">
+                {{ .JSON.String "description" }}
+              </p>
