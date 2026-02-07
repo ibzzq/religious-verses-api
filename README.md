@@ -26,6 +26,10 @@ Religious Verses API is a lightweight and easy-to-use API that delivers a quick 
 - These URLs have a worker route within Cloudflare, but are *exposed perfectly*
 - Hosted in Cloudflare with KV worker application databases
 
+- https://quran.ibzz.uk
+- https://bible.ibzz.uk
+- https://torah.ibzz.uk
+
 ## Example Usage
 This API works tremendously well with many use cases. Personally, I use the API with the [Glance Dashboard](https://github.com/glanceapp/glance) through the [Custom Glance YML Provided](https://github.com/ibzzq/religious-verses-api/tree/main/Glance%20YMLs) where it can be aesthetically displayed on my [Glance Dashboard](https://github.com/glanceapp/glance). Here are some examples of what it may look like within the webpage dashboard as a custom widget. I mention Glance a lot throughout these docs, but please note that this API can also be used for:
 - [Home Assistant](https://www.home-assistant.io/) dashboards (Markdown or custom cards pulling REST data)
