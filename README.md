@@ -25,7 +25,7 @@ Religious Verses API is a lightweight and easy-to-use API that delivers a quick 
 - The API themselves are currently hosted at: *quran.ibzz.uk - bible.ibzz.uk - torah.ibzz.uk*
 - These URLs have a worker route within Cloudflare, but are *exposed perfectly*
 - Hosted in Cloudflare with KV worker application databases
-
+---
 - API for the Quran: https://quran.ibzz.uk
 - API for the Bible: https://bible.ibzz.uk
 - API for the Torah: https://torah.ibzz.uk
